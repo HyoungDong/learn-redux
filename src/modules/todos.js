@@ -2,11 +2,11 @@ const ADD_TODO = 'todo/ADD_TODO';
 const TOGGLE_TODO = 'todo/TOGGLE_TODO';
 
 let nextId = 1;
-export const addTodo = item => ({
+export const addTodo = text => ({
   type: ADD_TODO,
   todo: {
     id: nextId++,
-    item,
+    text,
   },
 });
 
